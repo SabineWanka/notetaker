@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var fs = require("fs");
-var Port = 3050;
+var port = 3050;
 var path = require("path");
 
 // reading j.son file and storing content 
@@ -57,6 +57,6 @@ app.delete("./api/notes/:id", function (req, res) {
 });
 
 // Server listening 
-app.listen(Port, function () {
-    console.log("App listening on port" + Port)
+app.listen(port, function () {
+    console.log("App listening on port" + port)
 });
